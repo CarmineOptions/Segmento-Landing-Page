@@ -44,21 +44,6 @@ export const Footer = () => {
             </nav>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
-          <div className="text-sm text-gray-400">
-            © {currentYear} Segmento. All rights reserved.
-          </div>
-          <div className="mt-4 md:mt-0">
-            <a
-              href="https://calendly.com/marek-hauzr/segmento "
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-blue-400 hover:text-blue-300"
-            >
-              Book a Demo
-            </a>
-          </div>
-        </div>
       </div>
     </footer>
   );
