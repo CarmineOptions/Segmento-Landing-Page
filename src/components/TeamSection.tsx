@@ -10,7 +10,7 @@ export const TeamSection = () => {
   }, {
     name: 'Andrej Chepelau',
     title: 'Senior Software Engineer',
-    bio: 'Started as a trading analyst at a crypto startup, focusing on high-frequency trading on DEXes. Co-founder of Carmine Finance where he played a key role in integrating DeRisk into multiple protocols.',
+    bio: 'Started as a trading analyst at a crypto startup, focusing on high-frequency trading on DEXes. Co-founder of Carmine Finance where he played a key role in integrating the risk monitoring platform DeRisk into multiple protocols.',
     linkedin: 'https://www.linkedin.com/in/andrej-chepelau',
     github: 'https://github.com/Chepelau'
   }, {
