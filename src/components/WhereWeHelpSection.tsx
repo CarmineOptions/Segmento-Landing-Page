@@ -1,7 +1,13 @@
-import React from 'react';
-import { AlertTriangleIcon, TrendingDownIcon, DollarSignIcon, UsersIcon, SearchIcon } from 'lucide-react';
+import {
+  AlertTriangleIcon,
+  TrendingDownIcon,
+  DollarSignIcon,
+  UsersIcon,
+  SearchIcon,
+} from "lucide-react";
 export const WhereWeHelpSection = () => {
-  return <section id="problem" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  return (
+    <section id="problem" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -82,5 +88,6 @@ export const WhereWeHelpSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

@@ -1,7 +1,7 @@
-import React from 'react';
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+  return (
+    <footer className="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="text-white">
@@ -11,19 +11,34 @@ export const Footer = () => {
           </div>
           <div className="mt-8 md:mt-0">
             <nav className="flex space-x-6">
-              <a href="#problem" className="text-gray-300 hover:text-white text-sm">
+              <a
+                href="#problem"
+                className="text-gray-300 hover:text-white text-sm"
+              >
                 Problem
               </a>
-              <a href="#solution" className="text-gray-300 hover:text-white text-sm">
+              <a
+                href="#solution"
+                className="text-gray-300 hover:text-white text-sm"
+              >
                 Solution
               </a>
-              <a href="#impact" className="text-gray-300 hover:text-white text-sm">
+              <a
+                href="#impact"
+                className="text-gray-300 hover:text-white text-sm"
+              >
                 Impact
               </a>
-              <a href="#examples" className="text-gray-300 hover:text-white text-sm">
+              <a
+                href="#examples"
+                className="text-gray-300 hover:text-white text-sm"
+              >
                 Examples
               </a>
-              <a href="#team" className="text-gray-300 hover:text-white text-sm">
+              <a
+                href="#team"
+                className="text-gray-300 hover:text-white text-sm"
+              >
                 Team
               </a>
             </nav>
@@ -34,11 +49,17 @@ export const Footer = () => {
             © {currentYear} Segmento. All rights reserved.
           </div>
           <div className="mt-4 md:mt-0">
-            <a href="https://calendly.com/marek-hauzr/segmento " target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300">
+            <a
+              href="https://calendly.com/marek-hauzr/segmento "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-blue-400 hover:text-blue-300"
+            >
               Book a Demo
             </a>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };

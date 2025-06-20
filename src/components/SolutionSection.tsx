@@ -1,7 +1,7 @@
-import React from 'react';
-import { DatabaseIcon, TagIcon, BarChartIcon, CodeIcon } from 'lucide-react';
+import { TagIcon, BarChartIcon, CodeIcon } from "lucide-react";
 export const SolutionSection = () => {
-  return <section id="solution" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  return (
+    <section id="solution" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -59,7 +59,7 @@ export const SolutionSection = () => {
             <div className="mt-4 pl-16">
               <div className="bg-white p-4 rounded-lg border border-gray-200">
                 <div className="flex items-center">
-                  <div className="h-5 w-5 text-blue-600 mr-2" />
+                  <TagIcon className="h-5 w-5 text-blue-600 mr-2" />
                   <p className="text-sm text-gray-600">
                     Enabled by Real-Time API - Instant wallet classification
                   </p>
@@ -69,5 +69,6 @@ export const SolutionSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

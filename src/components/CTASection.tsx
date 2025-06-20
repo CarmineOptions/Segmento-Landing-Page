@@ -1,7 +1,7 @@
-import React from 'react';
-import { CalendarIcon } from 'lucide-react';
+import { CalendarIcon } from "lucide-react";
 export const CTASection = () => {
-  return <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-500 to-purple-600">
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-500 to-purple-600">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -12,7 +12,12 @@ export const CTASection = () => {
             understanding of user behavior and optimize your growth strategies.
           </p>
           <div className="mt-10">
-            <a href="https://calendly.com/marek-hauzr/segmento" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 md:text-lg md:px-10 shadow-lg">
+            <a
+              href="https://calendly.com/marek-hauzr/segmento"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 md:text-lg md:px-10 shadow-lg"
+            >
               <CalendarIcon className="mr-2 h-5 w-5" />
               Schedule a Demo Call
             </a>
@@ -23,5 +28,6 @@ export const CTASection = () => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
