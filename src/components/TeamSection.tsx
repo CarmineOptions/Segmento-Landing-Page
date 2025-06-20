@@ -16,7 +16,7 @@ export const TeamSection = () => {
   }, {
     name: 'David Vodrazka',
     title: 'Senior Full-Stack Engineer',
-    bio: 'Spent nearly five years developing scalable interfaces at Seznam.cz. At Carmine Finance, focuses on frontend development while also managing DevOps and occasionally contributing to smart contract development.',
+    bio: 'Spent nearly five years developing scalable interfaces at Seznam.cz (largest CEE competitor of Google). At Carmine Finance, focuses on frontend development while also managing DevOps and occasionally contributing to smart contract development.',
     linkedin: 'https://www.linkedin.com/in/davevodrazka',
     github: 'https://github.com/DaveVodrazka'
   }];
