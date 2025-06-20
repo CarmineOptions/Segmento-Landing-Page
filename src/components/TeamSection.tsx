@@ -1,26 +1,33 @@
-import React from 'react';
-import { GithubIcon, LinkedinIcon } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 export const TeamSection = () => {
-  const teamMembers = [{
-    name: 'Marek Hauzr',
-    title: 'CEO',
-    bio: 'Founder of Carmine Finance, with experience in data-driven product development, machine learning, and blockchain technology. Previously led technical teams at CreativeDock and worked as a lead quant at a European investment bank.',
-    linkedin: 'https://www.linkedin.com/in/marek-hauzr/',
-    github: 'https://github.com/MarekHauzr'
-  }, {
-    name: 'Andrej Chepelau',
-    title: 'Senior Software Engineer',
-    bio: 'Started as a trading analyst at a crypto startup, focusing on high-frequency trading on DEXes. Co-founder of Carmine Finance where he played a key role in integrating the risk monitoring platform DeRisk into multiple protocols.',
-    linkedin: 'https://www.linkedin.com/in/andrej-chepelau',
-    github: 'https://github.com/Chepelau'
-  }, {
-    name: 'David Vodrazka',
-    title: 'Senior Full-Stack Engineer',
-    bio: 'Spent nearly five years developing scalable interfaces at Seznam.cz (largest CEE competitor of Google). At Carmine Finance, focuses on frontend development while also managing DevOps and occasionally contributing to smart contract development.',
-    linkedin: 'https://www.linkedin.com/in/davevodrazka',
-    github: 'https://github.com/DaveVodrazka'
-  }];
-  return <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  const teamMembers = [
+    {
+      name: "Marek Hauzr",
+      title: "CEO",
+      bio: "Founder of Carmine Finance, with experience in data-driven product development, machine learning, and blockchain technology. Previously led technical teams at CreativeDock and worked as a lead quant at a European investment bank.",
+      linkedin: "https://www.linkedin.com/in/marek-hauzr/",
+      github: "https://github.com/MarekHauzr",
+      img: "marek.jpeg",
+    },
+    {
+      name: "Andrej Chepelau",
+      title: "Senior Software Engineer",
+      bio: "Started as a trading analyst at a crypto startup, focusing on high-frequency trading on DEXes. Co-founder of Carmine Finance where he played a key role in integrating the risk monitoring platform DeRisk into multiple protocols.",
+      linkedin: "https://www.linkedin.com/in/andrej-chepelau",
+      github: "https://github.com/Chepelau",
+      img: "andrej.jpeg",
+    },
+    {
+      name: "David Vodrazka",
+      title: "Senior Full-Stack Engineer",
+      bio: "Spent nearly five years developing scalable interfaces at Seznam.cz (largest CEE competitor of Google). At Carmine Finance, focuses on frontend development while also managing DevOps and occasionally contributing to smart contract development.",
+      linkedin: "https://www.linkedin.com/in/davevodrazka",
+      github: "https://github.com/DaveVodrazka",
+      img: "david.jpeg",
+    },
+  ];
+  return (
+    <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -33,12 +40,14 @@ export const TeamSection = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((member, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-md border border-gray-100"
+            >
               <div className="flex justify-center mb-6">
-                <div className="h-40 w-40 rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-4xl text-gray-500">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                <div className="h-40 w-40 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <img src={`/assets/${member.img}`} alt="Profile picture" />
                 </div>
               </div>
               <div className="text-center">
@@ -48,15 +57,26 @@ export const TeamSection = () => {
                 <p className="text-blue-600 font-medium">{member.title}</p>
                 <p className="mt-3 text-gray-600">{member.bio}</p>
                 <div className="mt-4 flex justify-center space-x-4">
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600">
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-blue-600"
+                  >
                     <LinkedinIcon className="h-6 w-6" />
                   </a>
-                  <a href={member.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-600">
+                  <a
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-blue-600"
+                  >
                     <GithubIcon className="h-6 w-6" />
                   </a>
                 </div>
               </div>
-            </div>)}
+            </div>
+          ))}
         </div>
         <div className="mt-16 text-center">
           <p className="text-lg text-gray-700">
@@ -68,5 +88,6 @@ export const TeamSection = () => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
