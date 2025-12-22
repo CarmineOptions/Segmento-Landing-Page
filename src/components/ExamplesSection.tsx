@@ -13,67 +13,7 @@ export const ExamplesSection = () => {
           </p>
         </div>
         <div className="space-y-12">
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-            <div className="flex flex-col md:flex-row">
-              <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-6 md:mb-0 md:mr-6">
-                <AlertCircleIcon className="h-8 w-8" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Airdrop Hunters Raid
-                </h3>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">What happened:</span> Airdrop
-                  hunters flooded a protocol, causing TVL to spike sharply and
-                  then crash as they left, leaving the protocol with unstable
-                  liquidity.
-                </p>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">Impact:</span> Genuine users and
-                  long-term capital were crowded out, making it hard to tell if
-                  growth was real. When hunters exited, the protocol faced a
-                  sudden drop in TVL.
-                </p>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">How Segmento helps:</span> By
-                  flagging spikes in the Airdrop Hunter segment early, Segmento
-                  would alert teams to pause incentives or adjust rewards,
-                  preventing a sharp TVL crash and ensuring incentives target
-                  real users.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
-            <div className="flex flex-col md:flex-row">
-              <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-green-100 text-green-600 mb-6 md:mb-0 md:mr-6">
-                <ShieldIcon className="h-8 w-8" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Prevented Airdrop Hunters Raid
-                </h3>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">What happened:</span> Analytics
-                  showed a sudden surge in Airdrop Hunter TVL, signaling most
-                  new capital was from short-term farmers (airdrop hunters and
-                  sybils).
-                </p>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">Impact:</span> Without
-                  intervention, these hunters would have withdrawn en masse
-                  after claiming rewards, causing a sharp TVL collapse.
-                </p>
-                <p className="mt-2 text-gray-600">
-                  <span className="font-medium">How Segmento helps:</span> By
-                  flagging the high concentration of Airdrop Hunters in real
-                  time, Segmento allowed the protocol to throttle or reallocate
-                  incentives thus keeping more stable users engaged and avoiding
-                  a major TVL drop.
-                </p>
-              </div>
-            </div>
-          </div>
+
           <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
             <div className="flex flex-col md:flex-row">
               <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 text-yellow-600 mb-6 md:mb-0 md:mr-6">
@@ -81,23 +21,115 @@ export const ExamplesSection = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900">
-                  Concentration Risk Example
+                  Know Your Users - What Do They Do in Other Protocols?
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  <span className="font-medium">What happened:</span> A few
-                  large Whale wallets account for the majority of TVL, making
-                  overall liquidity dependent on their actions.
+                  <span className="font-medium">What happened:</span> Segmento identified
+                  that protocol's users have much more assets on other platforms and that they
+                  started to move their assets.
                 </p>
                 <p className="mt-2 text-gray-600">
-                  <span className="font-medium">Impact:</span> If one or two
-                  whales withdraw funds, TVL can crash suddenly, masking real
-                  user engagement and putting the protocol at risk.
+                  <span className="font-medium">Impact:</span> The cost of acquiring new liquidity
+                  from existing users is much lower than acquiring new users.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">How Segmento helps:</span> Segmento provides
+                  information about the users' holdings and activity on other platforms,
+                  allowing the protocol to create targeted campaigns to incentivize those users
+                  to bring their assets to the protocol. Decreasing the cost of acquisition.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-green-100 text-green-600 mb-6 md:mb-0 md:mr-6">
+                <ShieldIcon className="h-8 w-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Understand the Needs of Your Users - What Do They Optimize For?
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">What happened:</span> Analytics
+                  showed protocol users became much more sensitive to fees on other platforms.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">Impact:</span> There is an opportunity
+                  in the market to acquire the fee sensitive users.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">Impact:</span> Without
+                  intervention, the protocol users might leave for other platforms with lower fees.
                 </p>
                 <p className="mt-2 text-gray-600">
                   <span className="font-medium">How Segmento helps:</span> By
-                  flagging high concentration in Whale segments, Segmento allows
-                  teams to incentivize smaller users or broaden liquidity
-                  sources, reducing dependence on a handful of large holders.
+                  flagging the sensitivity of users to fees, Segmento allows teams to
+                  acquire new users from competitors and create targeted campaigns and
+                  incentives to retain existing users and reduce churn.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 text-yellow-600 mb-6 md:mb-0 md:mr-6">
+                <BarChart2Icon className="h-8 w-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Leverage Your KOLs - Identify the Most Valuable Influencers
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">What happened:</span> Protocol launched marketing
+                  campaign and referral program. The program was successful but also costly.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">Impact:</span> The is growing but is not able to
+                  afford the same marketing budget in the future. The protocol needs to optimize
+                  who they reward to maximize growth with reasonable cost.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">How Segmento helps:</span> Based on referral data,
+                  Segmento provides information about the value that each KOL brings to the protocol.
+                  Segmento not only tracks the direct value from realized referrals but also the
+                  overall value of the users reffered by the KOL over time. Imagine KOL A brings
+                  100 users that each spends $10 on the protocol and additional $10 elsewhere,
+                  while KOL B brings 50 users that each spends $10 on the protocol and $100 elsewhere.
+                  KOL B brought more valuable users even though the direct referrals were lower.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mb-6 md:mb-0 md:mr-6">
+                <AlertCircleIcon className="h-8 w-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Protection Against Airdrop Farmers
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">What happened:</span> Airdrop
+                  farmers flooded a protocol, causing TVL and activity to go up
+                  with a goal to dump after airdrop.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">Impact:</span> Genuine users,
+                  long-term capital and users that intended to hold the token for a long time
+                  were hurt by the drop of the price caused by airdrop farmers.
+                  Causing the genuine users and long term token holders to leave early
+                  since they wanted to protect what was left.
+                </p>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-medium">How Segmento helps:</span> By
+                  identifying the Airdrop Farmers and "early token sellers",
+                  Segmento would suggest to the team to decrease the allocation
+                  of points and airdrop to the users identified as Airdrop Farmers.
                 </p>
               </div>
             </div>

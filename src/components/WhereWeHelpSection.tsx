@@ -26,11 +26,13 @@ export const WhereWeHelpSection = () => {
               <UsersIcon className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 text-center">
-              Inflated User Metrics
+              Lack of User Targeting
             </h3>
             <p className="mt-2 text-gray-600">
-              DAU and MAU figures are inflated by sybil wallets and airdrop
-              farmers, making it difficult to measure real user engagement.
+              Existing dashboards offer per-protocol user segmentations completely overlooking
+              cross-protocol user behavior. They cannot be used
+              with targeted marketing to leverage this valuable information for
+              customized messaging.
             </p>
           </div>
           <div className="bg-blue-50 p-6 rounded-lg shadow-md border border-blue-100 lg:row-span-2">
@@ -38,12 +40,11 @@ export const WhereWeHelpSection = () => {
               <SearchIcon className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 text-center">
-              Lack of User Targeting
+              Inflated User Metrics
             </h3>
             <p className="mt-2 text-gray-600">
-              Existing dashboards offer user segmentations but cannot be plugged
-              into targeted marketing to leverage this valuable information for
-              customized messaging.
+              DAU and MAU figures are inflated by sybil wallets and airdrop
+              farmers, making it difficult to measure real user engagement.
             </p>
           </div>
           {/* Regular Cards */}
@@ -52,12 +53,12 @@ export const WhereWeHelpSection = () => {
               <DollarSignIcon className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 text-center">
-              Expensive Analytics
+              Marketing Inefficiency
             </h3>
             <p className="mt-2 text-gray-600">
-              Existing analytics suites are closed-source and expensive, locking
-              out smaller teams and public-goods grant programs from accessing
-              critical insights.
+              Protocols cannot see where valuable users are coming from and what
+              incentives bring them, making it hard to optimize marketing spend
+              and user acquisition strategies.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
@@ -68,7 +69,7 @@ export const WhereWeHelpSection = () => {
               Information Asymmetry
             </h3>
             <p className="mt-2 text-gray-600">
-              Small token investors and users don't know what they're investing
+              Protocols, VCs, and users don't know what they're investing
               in, putting them on the "less informed side" compared to larger
               players in the ecosystem.
             </p>
@@ -78,12 +79,12 @@ export const WhereWeHelpSection = () => {
               <TrendingDownIcon className="h-6 w-6" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 text-center">
-              Marketing Inefficiency
+              Inflated Value of Influencers
             </h3>
             <p className="mt-2 text-gray-600">
-              Protocols cannot see where valuable users are coming from and what
-              incentives bring them, making it hard to optimize marketing spend
-              and user acquisition strategies.
+              Without accurate user behavior data, protocols struggle to
+              identify and leverage key opinion leaders (KOLs), leading to
+              inefficient marketing efforts and missed opportunities for growth.
             </p>
           </div>
         </div>

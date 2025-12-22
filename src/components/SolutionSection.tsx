@@ -21,23 +21,12 @@ export const SolutionSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-medium text-gray-900">
-                  Public Dashboard
+                  Public and Private Dashboards
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  Access a lightweight React dashboard showing cohort sizes,
-                  retention rates, and cross-chain migration patterns.
+                  Access dashboard showing all the information about your users and KOLs.
+                  From cohort sizes, retention rates, value of users, to cross-chain migration patterns.
                 </p>
-              </div>
-            </div>
-            <div className="mt-4 pl-16">
-              <div className="bg-white p-4 rounded-lg border border-gray-200">
-                <div className="flex items-center">
-                  <TagIcon className="h-5 w-5 text-blue-600 mr-2" />
-                  <p className="text-sm text-gray-600">
-                    Powered by Deterministic Heuristics - Advanced wallet
-                    classification system
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -54,16 +43,6 @@ export const SolutionSection = () => {
                   Ready to be plugged into dApps, allowing for personalized
                   offers based on user profiles and behavior.
                 </p>
-              </div>
-            </div>
-            <div className="mt-4 pl-16">
-              <div className="bg-white p-4 rounded-lg border border-gray-200">
-                <div className="flex items-center">
-                  <TagIcon className="h-5 w-5 text-blue-600 mr-2" />
-                  <p className="text-sm text-gray-600">
-                    Enabled by Real-Time API - Instant wallet classification
-                  </p>
-                </div>
               </div>
             </div>
           </div>
