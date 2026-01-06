@@ -13,10 +13,10 @@ export function App() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <ExamplesSection />
         <WhereWeHelpSection />
         <SolutionSection />
         <HowWeHelpSection />
-        <ExamplesSection />
         <TeamSection />
         <CTASection />
       </main>

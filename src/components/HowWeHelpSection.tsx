@@ -33,11 +33,11 @@ export const HowWeHelpSection = () => {
           />
           <HowWeHelpItem
             title="Accurate Metrics"
-            text="Provides reliable metrics (Real DAU, Genuine users, Airdrop Hunters, Sybils, Whales) for foundations and protocol grants, enabling data-driven decision making."
+            text="Provides reliable metrics (Real DAU, Genuine users, Airdrop Hunters, Sybils, Whales) for foundations and protocols, enabling data-driven decision making."
           />
           <HowWeHelpItem
             title="Reduced Wastage"
-            text="Reduces incentive wastage by identifying sybil-driven growth early, allowing protocols to adjust strategies before resources are depleted."
+            text="Reduces incentive wastage by identifying not performing KOLs or sybil-driven growth early, allowing protocols to adjust strategies before resources are depleted."
           />
           <HowWeHelpItem
             title="Retention Insights"

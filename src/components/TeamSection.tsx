@@ -34,7 +34,7 @@ export const TeamSection = () => {
             Our Team
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            At Carmine, our team combines deep expertise in Data analysis and
+            At Segmento, our team combines deep expertise in Data analysis and
             modeling, DeFi and software development including on-chain behaviour
             mechanics.
           </p>
