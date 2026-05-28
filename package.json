@@ -12,8 +12,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@segmento/core": "^0.9.1",
+    "@segmento/analytics": "^0.5.0",
+    "@segmento/core": "^0.12.0",
+    "i": "^0.3.7",
     "lucide-react": "^1.14.0",
+    "npm": "^11.16.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   },

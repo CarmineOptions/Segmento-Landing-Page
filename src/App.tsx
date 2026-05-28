@@ -11,18 +11,24 @@ import { KOLMarketingPerformancePage } from "./components/KOLMarketingPerformanc
 import { ProtocolValueExampleReportPage } from "./components/ProtocolValueExampleReportPage";
 import { FakeBankExamplePage } from "./components/FakeBankExamplePage";
 import { getPageVariant, PAGES } from "./navigation";
+import { initAnalytics } from "@segmento/analytics";
 import { SegmentoClient } from "@segmento/core";
 
+SegmentoClient.init(
+  "eyJ2IjoxLCJwaWQiOiJzZWdtZW50byIsIm5hbWUiOiJTZWdtZW50byIsImNoayI6ImI4NzEzMDVjIn0",
+);
+initAnalytics("segmento");
+
 export function App() {
-  SegmentoClient.init(
-    "eyJ2IjoxLCJwaWQiOiJzZWdtZW50byIsIm5hbWUiOiJTZWdtZW50byIsImNoayI6ImI4NzEzMDVjIn0",
-  );
+
   const page = getPageVariant();
 
-  if (page === PAGES.KOLMarketingPerformancePage) return <KOLMarketingPerformancePage />;
+  if (page === PAGES.KOLMarketingPerformancePage)
+    return <KOLMarketingPerformancePage />;
   if (page === PAGES.KOLReportExamplePage) return <KOLReportExamplePage />;
   if (page === PAGES.FakeBankExamplePage) return <FakeBankExamplePage />;
-  if (page === PAGES.ProtocolValueExampleReportPage) return <ProtocolValueExampleReportPage />;
+  if (page === PAGES.ProtocolValueExampleReportPage)
+    return <ProtocolValueExampleReportPage />;
 
   return (
     <div className="min-h-screen bg-[#0a0f1e]">

@@ -8,12 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@segmento/analytics':
+        specifier: ^0.5.0
+        version: 0.5.0
       '@segmento/core':
-        specifier: ^0.9.1
-        version: 0.9.1
+        specifier: ^0.12.0
+        version: 0.12.0
+      i:
+        specifier: ^0.3.7
+        version: 0.3.7
       lucide-react:
         specifier: ^1.14.0
         version: 1.14.0(react@19.2.5)
+      npm:
+        specifier: ^11.16.0
+        version: 11.16.0
       react:
         specifier: ^19.2.5
         version: 19.2.5
@@ -492,8 +501,11 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.7':
     resolution: {integrity: sha512-qujRfC8sFVInYSPPMLQByRh7zhwkGFS4+tyMQ83srV1qrxL4g8E2tyxVVyxd0+8QeBM1mIk9KbWxkegRr76XzA==}
 
-  '@segmento/core@0.9.1':
-    resolution: {integrity: sha512-peDOIQRxPVgEHcaA63xoh1TqFf61hNJd6srvfFIFKvWINl0mezvRR/63DiRksthvUfuQUYifta3jffgWs+VlCg==}
+  '@segmento/analytics@0.5.0':
+    resolution: {integrity: sha512-kjw7FErFOvKtINYxUSCl4CPlBuyb+p4MbaL7EGNLUx9wi8JdXuFex+U/+dz3cpAnp8PzVMss4E5jVgWBVmNnIQ==}
+
+  '@segmento/core@0.12.0':
+    resolution: {integrity: sha512-ALBFT8HV3gvZLmfsRkuGvO83DyqpCVPHhjsoIsm99RsZ7Uvhf7ICjL11IK9H4PThzVjYLN9Wnx3jAzALtZuyXw==}
 
   '@tailwindcss/node@4.2.4':
     resolution: {integrity: sha512-Ai7+yQPxz3ddrDQzFfBKdHEVBg0w3Zl83jnjuwxnZOsnH9pGn93QHQtpU0p/8rYWxvbFZHneni6p1BSLK4DkGA==}
@@ -955,6 +967,10 @@ packages:
   hermes-parser@0.25.1:
     resolution: {integrity: sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==}
 
+  i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
+
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -1140,6 +1156,77 @@ packages:
 
   node-releases@2.0.38:
     resolution: {integrity: sha512-3qT/88Y3FbH/Kx4szpQQ4HzUbVrHPKTLVpVocKiLfoYvw9XSGOX2FmD2d6DrXbVYyAQTF2HeF6My8jmzx7/CRw==}
+
+  npm@11.16.0:
+    resolution: {integrity: sha512-A74XL8OxmcegZDMWPkWb5bEQppg8HdYwW3rBD2sPoS4UQHVajfaxBkqyzLeJ3wR0kZ+5xoTjItxXaF7eIXUsyw==}
+    engines: {node: ^20.17.0 || >=22.9.0}
+    hasBin: true
+    bundledDependencies:
+      - '@isaacs/string-locale-compare'
+      - '@npmcli/arborist'
+      - '@npmcli/config'
+      - '@npmcli/fs'
+      - '@npmcli/map-workspaces'
+      - '@npmcli/metavuln-calculator'
+      - '@npmcli/package-json'
+      - '@npmcli/promise-spawn'
+      - '@npmcli/redact'
+      - '@npmcli/run-script'
+      - '@sigstore/tuf'
+      - abbrev
+      - archy
+      - cacache
+      - chalk
+      - ci-info
+      - fastest-levenshtein
+      - fs-minipass
+      - glob
+      - graceful-fs
+      - hosted-git-info
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-even-better-errors
+      - libnpmaccess
+      - libnpmdiff
+      - libnpmexec
+      - libnpmfund
+      - libnpmorg
+      - libnpmpack
+      - libnpmpublish
+      - libnpmsearch
+      - libnpmteam
+      - libnpmversion
+      - make-fetch-happen
+      - minimatch
+      - minipass
+      - minipass-pipeline
+      - ms
+      - node-gyp
+      - nopt
+      - npm-audit-report
+      - npm-install-checks
+      - npm-package-arg
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - p-map
+      - pacote
+      - parse-conflict-json
+      - proc-log
+      - qrcode-terminal
+      - read
+      - semver
+      - spdx-expression-parse
+      - ssri
+      - supports-color
+      - tar
+      - text-table
+      - tiny-relative-date
+      - treeverse
+      - validate-npm-package-name
+      - which
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -1725,7 +1812,11 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.7': {}
 
-  '@segmento/core@0.9.1': {}
+  '@segmento/analytics@0.5.0':
+    dependencies:
+      '@segmento/core': 0.12.0
+
+  '@segmento/core@0.12.0': {}
 
   '@tailwindcss/node@4.2.4':
     dependencies:
@@ -2223,6 +2314,8 @@ snapshots:
     dependencies:
       hermes-estree: 0.25.1
 
+  i@0.3.7: {}
+
   ignore@5.3.2: {}
 
   ignore@7.0.5: {}
@@ -2359,6 +2452,8 @@ snapshots:
   natural-compare@1.4.0: {}
 
   node-releases@2.0.38: {}
+
+  npm@11.16.0: {}
 
   optionator@0.9.4:
     dependencies:
