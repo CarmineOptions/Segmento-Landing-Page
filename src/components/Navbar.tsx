@@ -37,7 +37,7 @@ export const Navbar = () => {
               Book a Demo
             </a>
             <a
-              href="https://general.segmento.tech"
+              href="https://app.segmento.tech"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-linear-to-r from-blue-500 to-violet-700 text-white px-5 py-2 rounded-lg text-sm font-semibold"
@@ -88,7 +88,7 @@ export const Navbar = () => {
             Book a Demo
           </a>
           <a
-            href="https://general.segmento.tech"
+            href="https://app.segmento.tech"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}

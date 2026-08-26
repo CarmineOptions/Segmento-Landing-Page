@@ -46,7 +46,7 @@ export const HeroSection = () => {
         </p>
         <div className="flex flex-wrap gap-3">
           <a
-            href="https://general.segmento.tech"
+            href="https://app.segmento.tech"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-linear-to-r from-blue-500 to-violet-700 text-white px-7 py-3 rounded-lg text-sm font-semibold"
